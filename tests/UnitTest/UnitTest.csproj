@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\HumidityModule\HumidityModule.csproj" />
+    <ProjectReference Include="..\..\src\HumidityFilterModule\HumidityFilterModule.csproj" />
   </ItemGroup>
 
 </Project>

@@ -67,13 +67,13 @@
               "createOptions": {}
             }
           },
-          "HumidityModule": {
+          "HumidityFilterModule": {
             "version": "1.0.0",
             "type": "docker",
             "status": "running",
             "restartPolicy": "always",
             "settings": {
-              "image": "${MODULEDIR<../HumidityModule>}",
+              "image": "${MODULEDIR<../HumidityFilterModule>}",
               "createOptions": {}
             }
           }
@@ -84,8 +84,8 @@
       "properties.desired": {
         "schemaVersion": "1.0",
         "routes": {
-          "HumidityModuleToIoTHub": "FROM /messages/modules/HumidityModule/outputs/* INTO $upstream",
-          "sensorToHumidityModule": "FROM /messages/modules/SimulatedTemperatureSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/HumidityModule/inputs/input1\")"
+          "sensorToHumidityFilterModule": "FROM /messages/modules/SimulatedTemperatureSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/HumidityFilterModule/inputs/input1\")",
+          "HumidityFilterModuleToIoTHub": "FROM /messages/modules/HumidityFilterModule/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 7200
