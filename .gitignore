@@ -4,6 +4,13 @@ project.fragment.lock.json
 artifacts/
 **/Properties/launchSettings.json
 
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
 *_i.c
 *_p.c
 *_i.h
