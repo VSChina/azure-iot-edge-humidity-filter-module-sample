@@ -189,7 +189,7 @@ namespace FilterModule
             Console.WriteLine($"Received method [{methodRequest.Name}]");
             var request = JsonConvert.DeserializeObject<HealthCheckRequestPayload>(methodRequest.DataAsJson);
 
-            var messageBody = Encoding.UTF8.GetBytes($"Device [{Environment.GetEnvironmentVariable("IOTEDGE_DEVICEID")}], Module [FilterModule] Running");
+            var messageBody = Encoding.UTF8.GetBytes($"Device [{Environment.GetEnvironmentVariable("IOTEDGE_DEVICEID")}], Module [HumidityFilterModule] Running");
 
             var healthCheckMessage = new Message(messageBody);
             healthCheckMessage.Properties.Add("MessageType", healthCheck);
