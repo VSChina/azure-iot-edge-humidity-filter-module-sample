@@ -35,7 +35,7 @@ namespace FilterModule
         private const string healthCheck = "healthcheck";
         private static int counter;
         private static ModuleClient ioTHubModuleClient;
-        private static int humidityThreshold = 25;
+        private static int humidityThreshold = 24;
 
         static void Main(string[] args)
         {
