@@ -1,8 +1,8 @@
-# Azure IoT Edge temperature filter module
+# Azure IoT Edge humidity filter module
 
 [![Build status](https://dev.azure.com/azure-iot-edge-devops/azure-iot-edge-devops-sample/_apis/build/status/humidity-filter-module-CI)](https://dev.azure.com/azure-iot-edge-devops/azure-iot-edge-devops-sample/_build/latest?definitionId=1)
 
-This is a sample module that filters the machine temperature.
+This is a sample module that filters the machine humidity.
 
 ## IoT Edge CI/CD Deep Dive Resources
 - [Temperature filter module repo](https://github.com/VSChina/azure-iot-edge-temperature-filter-module-sample). This module filters the temperature of machine that above given threshold. VS Code + YAML
